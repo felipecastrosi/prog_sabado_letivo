@@ -24,8 +24,15 @@
     ];
 
     //PROCESSAMENTO
-
-
+    const tamanho = carrinho.length;
+    let subtotal = 0;
+    for (var i = 0; i < tamanho; i++) {
+        subtotal = subtotal + carrinho[i].precoUnitario * carrinho[i].quantidade
+    }
+    let total = 0;
+    (subtotal > 200) ? total = subtotal + (subtotal * 0.2) : total = subtotal;
+    const promocao = total - subtotal;
     //SAÍDA
+    (total == 0) ? alert("O total da compra é de R$" + total.toFixed(2)) : alert("O subtotal da compra é de R$" + subtotal.toFixed(2) + ", a promoção foi de R$" + promocao.toFixed(2) + " e o total foi de R$" + total.toFixed(2))
 
 </script>

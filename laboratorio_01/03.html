@@ -20,6 +20,10 @@
 
     //PROCESSAMENTO
     let piramide = "";
+    if (tamanho > 9) {
+        alert("para de tentar explodir o pc");
+    } else {
+        
     for (var i = 1; i < tamanho ; i++) { 
         for (var j = 0; j < i; j++) {
             piramide = piramide + i;
@@ -33,7 +37,7 @@
         }
         piramide = piramide + "<br>"
     }
-    console.log(i)
+    }
     
 
     //SAÍDA

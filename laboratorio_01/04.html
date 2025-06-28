@@ -10,11 +10,27 @@
     */
 
     //ENTRADA
-
+    const k = Number(prompt("Quantas notas deseja inserir?"))
+    
 
     //PROCESSAMENTO
+    const notas = []
+    for (var i = 0; i < k; i++) {
+            notas.push(prompt("Insira a nota."))
+        }
 
+        const menNota = Math.min(...notas);
+        const maiNota = Math.max(...notas);
+        
+        
+        let somaNotas = 0;
+        const tamanho = notas.length
+        for (var j = 0; j != tamanho; j++) {
+            somaNotas = somaNotas + Number(notas[j])
+        }
 
+        const media = (somaNotas / k).toFixed(1);
     //SAÍDA
+    alert("A maior nota é " + maiNota + ", a menor é " + menNota + " e a média é " + media)
     
 </script>
