@@ -14,11 +14,12 @@
     */
 
     //ENTRADA
-
+    const palavra = prompt("Insira uma palavra.").toUpperCase();
 
     //PROCESSAMENTO
-
+    const reverso = palavra.split("").reverse("").join("");
 
     //SAÍDA
-    
+    (palavra == reverso) ? alert("A palavra " + palavra + " é um palíndromo.") : alert("A palavra " + palavra + " não é um palíndromo.")
+
 </script>

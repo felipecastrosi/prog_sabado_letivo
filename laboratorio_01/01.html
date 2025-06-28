@@ -7,11 +7,22 @@
     */
 
     //ENTRADA
-
+    const tamanho = Number(prompt("Quantos números você quer gerar?"));
+    let n1 = Number(prompt("Qual o primeiro número?"));
+    let n2 = Number(prompt("Qual o segundo número?"));
 
     //PROCESSAMENTO
-
+    let sequencia = n1 + ", " + n2;
+    let n3 = 0;
+    
+    for (var i = 0; i < (tamanho - 2); i++) {
+        n3 = n1 + n2
+        sequencia = sequencia + ", " + n3
+        n1 = n2
+        n2 = n3
+    }
 
     //SAÍDA
+    alert(sequencia)
 
 </script>

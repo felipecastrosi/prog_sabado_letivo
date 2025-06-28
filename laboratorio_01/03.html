@@ -16,11 +16,27 @@
     */
 
     //ENTRADA
-
+    let tamanho = Number(prompt("Qual o tamanho da pirâmide? (Número de 1 a 9)"));
 
     //PROCESSAMENTO
-
+    let piramide = "";
+    for (var i = 1; i < tamanho ; i++) { 
+        for (var j = 0; j < i; j++) {
+            piramide = piramide + i;
+        }
+        piramide = piramide + "<br>"
+    }
+    console.log(i)
+    for (; i != 0; i = i - 1) {
+        for (var k = 0; k < i; k++) {
+            piramide = piramide + i;
+        }
+        piramide = piramide + "<br>"
+    }
+    console.log(i)
+    
 
     //SAÍDA
+    document.write(piramide)
 
 </script>
